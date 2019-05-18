@@ -1,0 +1,21 @@
+<%= form_with(model: @talk, local: true, url: choose_new_or_edit ) do |form| %>
+<% if @talk.errors.any? %>
+<div id="error_explanation">
+    <h2><%= @talk.errors.count %>件のエラーがあります。</h2>
+    <ul>
+        <% @blog.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+    </ul>
+</div>
+<% end %>
+
+<div class="talk_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+</div>
+
+<%= form.submit %>
+<% end %>
+
+<%= link_to "つぶやきに戻る", talks_path %>

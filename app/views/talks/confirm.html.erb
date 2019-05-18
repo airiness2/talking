@@ -1,0 +1,15 @@
+<h3>以下の内容で、投稿する。</h3>
+
+<%= form_with(model: @talk, url: talks_path, local: true) do |form| %>
+<%= form.hidden_field :content %>
+
+<p>本文: <%= @talk.content %></p>
+
+<%= form.submit "投稿する" %>
+
+<% end %>
+
+<%= form_with(model: @talk, url: new_talk_path, local: true, method: 'get') do |form| %>
+<%= form.hidden_field :content %>
+<%= form.submit "戻る", name: 'back' %>
+<% end %>
