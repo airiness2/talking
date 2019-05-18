@@ -22,7 +22,7 @@
 <div id="error_explanation">
     <h2><%= @talk.errors.count %>件のエラーがあります。</h2>
     <ul>
-        <% @blog.errors.full_messages.each do |msg| %>
+        <% @talk.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
         <% end %>
     </ul>
@@ -32,11 +32,10 @@
 <div class="talk_content">
 <%= form.text_area :content, :size=>"30x5" %>
 <br>
-<%= form.submit %>
+<%= form.submit "投稿する" %>
 <% end %>
 </div>
 
-
 <footer>
-    <p>2019</p>
+  <p>2019</p>
 </footer>

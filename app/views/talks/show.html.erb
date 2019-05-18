@@ -1,2 +1,28 @@
-<h1>つぶやき詳細画面</h1>
-<p>内容: <%= @talk.content %></p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Talk</title>
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+</head>
+<body>
+  <header>  
+    <ul>
+      <li class="left"><a href="#">ホーム</a></li>
+      <li class="right"><%= link_to '新規作成', new_talk_path %></li>
+      </div>
+    </ul>
+  </header>
+
+  <section class="line">
+  </section>
+
+  <h3>投稿内容詳細</h3>
+
+  <div class="confirm-text">
+    <%= @talk.content %>
+  </div>
+
+  </body>
+</html>

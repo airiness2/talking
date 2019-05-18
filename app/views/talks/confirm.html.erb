@@ -1,15 +1,37 @@
-<h3>以下の内容で、投稿する。</h3>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Talk</title>
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+</head>
+<body>
+  <header>  
+    <ul>
+      <li class="left"><a href="#">ホーム</a></li>
+      <li class="right"><%= link_to '新規作成', new_talk_path %></li>
+      </div>
+    </ul>
+  </header>
 
-<%= form_with(model: @talk, url: talks_path, local: true) do |form| %>
-<%= form.hidden_field :content %>
+  <section class="line">
+  </section>
 
-<p>本文: <%= @talk.content %></p>
+  <h3>以下の内容で、投稿する。</h3>
+  <%= form_with(model: @talk, url: talks_path, local: true) do |form| %>
+  <%= form.hidden_field :content %>
 
-<%= form.submit "投稿する" %>
+  <div class="confirm-text">
+    <%= @talk.content %></p>
+  </div>
+  <%= form.submit "投稿する" %>
+  <% end %>
 
-<% end %>
+  <%= form_with(model: @talk, url: new_talk_path, local: true, method: 'get') do |form| %>
+  <%= form.hidden_field :content %>
+  <%= form.submit "戻る", name: 'back' %>
+  <% end %>
 
-<%= form_with(model: @talk, url: new_talk_path, local: true, method: 'get') do |form| %>
-<%= form.hidden_field :content %>
-<%= form.submit "戻る", name: 'back' %>
-<% end %>
+</body>
+</html>
