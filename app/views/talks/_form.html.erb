@@ -1,3 +1,22 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Achieve</title>
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+</head>
+
+<body>
+  <header>  
+    <ul>
+      <li class="left"><%= link_to 'ホーム', talks_path %></li>
+      <li class="right"><%= link_to '新規作成', new_talk_path %></li>
+      </div>
+    </ul>
+  </header>
+
+  <section class="line">
+  </section>
+  
 <%= form_with(model: @talk, local: true, url: choose_new_or_edit ) do |form| %>
 <% if @talk.errors.any? %>
 <div id="error_explanation">
@@ -11,11 +30,13 @@
 <% end %>
 
 <div class="talk_content">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
-</div>
-
+<%= form.text_area :content, :size=>"30x5" %>
+<br>
 <%= form.submit %>
 <% end %>
+</div>
 
-<%= link_to "つぶやきに戻る", talks_path %>
+
+<footer>
+    <p>2019</p>
+</footer>

@@ -79,6 +79,17 @@ header ul:after {
   text-decoration:  none;
 }
 
+
+.talk_content {
+  background-color: #fff;
+  text-align: center;
+  margin : auto ;
+  height: 700px;
+  width: 500px;
+  padding: 10px;
+}
+
+
 footer {
 /* footer部分の実装 */
   background-color: green;
@@ -93,3 +104,7 @@ footer {
     display: block;
     clear: both;
 }
+
+
+
+    
