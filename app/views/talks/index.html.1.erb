@@ -1,0 +1,21 @@
+<h1>つぶやき一覧</h1>
+
+<%= notice %>
+
+<table>
+    <tr>
+        <th>内容</th>
+    </tr>
+    
+    <% @talks.each do |talk| %>
+    <tr>
+        <td><%= talk.content %></td>
+        <td><%= link_to '詳細を確認する', talk_path(talk.id) %></td>
+        <td><%= link_to "ブログを編集する", edit_talk_path(talk.id) %></td>
+        <td><%= link_to "ブログを削除する", talk_path(talk.id), method: :delete, data: { confirm: "本当に削除していいですか？"} %></td>
+    </tr>
+    <% end %>
+</table>
+
+<%= link_to 'つぶやき一覧画面に戻る', '/talks' %>
+<%= link_to 'つぶやき新規作成へ', new_talk_path %>

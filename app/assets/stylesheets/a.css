@@ -1,0 +1,95 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+.main-header {
+  padding-bottom: 15%;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ここから */
+header {
+    background-color: #fff;
+    height: 30px;
+    width: 500px;
+    margin: auto;
+}
+
+header ul {
+    margin: 0;
+}
+
+header ul a {
+  text-decoration:  none;
+  color: #2F4F4F;
+}
+
+header li {
+    list-style:none;
+    padding: 10px;
+}
+
+header .left {
+  float: left;
+  width: auto;
+}
+
+header .right {
+  float: right;
+  width: auto;
+}
+
+header ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.line {
+  margin: auto;
+  padding: 20px;
+  background-color: green;
+  width: 100%;
+}
+
+
+.talk {
+  background-color: #fff;
+  text-align: center;
+  margin : auto ;
+  height: 700px;
+  width: 500px;
+  padding: 10px;
+}
+
+.talk th {
+  border: solid 1px #D3D3D3;
+  box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.talk a {
+  text-decoration:  none;
+}
+
+footer {
+/* footer部分の実装 */
+  background-color: green;
+  margin: -30px;
+  padding: 10px;
+  color: #fff;
+  font-size: 0.5rem;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
