@@ -23,7 +23,7 @@
   <%= form.hidden_field :content %>
 
   <div class="confirm-text">
-    <%= @talk.content %></p>
+    <%= simple_format(@talk.content) %></p>
   </div>
   <%= form.submit "投稿する" %>
   <% end %>

@@ -89,8 +89,8 @@ header ul:after {
 
 
 .confirm-text {
-  height: 50px;
-  width: 100px;
+  height: auto;
+  width: auto;
   text-align: center;
   margin: auto;
 }

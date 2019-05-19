@@ -22,7 +22,7 @@
   <table align=center>
     <% @talks.each do |talk| %>
     <tr>
-      <th colspan="3" width="400" height="100"><%= talk.content %></td>
+      <th colspan="3" width="400" height="100"><%= simple_format(talk.content) %></td>
     </tr>
     <tr>    
       <td><%= link_to '詳細', talk_path(talk.id) %></td>
