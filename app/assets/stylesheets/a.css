@@ -95,6 +95,9 @@ header ul:after {
   margin: auto;
 }
 
+.push {
+  height: 50px;
+}
 
 footer {
 /* footer部分の実装 */
