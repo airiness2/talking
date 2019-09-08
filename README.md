@@ -1,24 +1,13 @@
-# README
+Name
+====
+diveintocode課題 twitter clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+twitter clone
 
-* Ruby version
+## Environment
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Rails 5.1.7
+- ruby 2.6.3p62
+- psql (PostgreSQL) 11.3
